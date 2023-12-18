@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-g4xm
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-hiwv-tenant/test-app-kuvz/devfile-sample-python-basic-g4xm@sha256:7413dacfccadbeec0d5908d0d0d66c2895da2006691730738b2bd50a80a163f4
+        name: my-python
+        resources: {}
+status: {}
